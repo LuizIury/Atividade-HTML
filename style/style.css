@@ -1,0 +1,57 @@
+/*Estilo página index*/
+
+.center{
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#menu li {
+    display: inline;
+    padding: 10px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+
+#menu li a:hover{
+    color:aqua;
+}
+
+.p30 {
+    padding: 40px;
+}
+
+
+
+/*Estilo página contato*/
+
+
+.formulario {
+    text-align: center;
+    padding: 100px;
+}
+
+.end{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.end a{
+    font-size: 15px;
+}
