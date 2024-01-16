@@ -19,33 +19,65 @@
         </li>
     </ul>
 
-    <h1 class="center">Entre em contato comigo para mais informações ou dúvidas!</h1>
+    <h1 class="center p40">Entre em contato comigo para mais informações ou dúvidas!</h1>
 
+<article class="coluna">
+<section>
     <form class="formulario">
-    <div class="p30">
+    <div class="p10">
         <label for="nome">Nome:</label>
-        <input type="text" id="nome">
+        <input type="text" id="nome" onkeyup='validaNome()'>
+        <div id='txtNome'></div>
     </div>
-    <div class="p30">
+    <div class="p10">
         <label for="email">E-mail:</label>
-        <input type="email" id="email">
+        <input type="email" id="email" onkeyup='validaEmail()'>
+        <div id='txtEmail'></div>
     </div> 
-    <div class="p30">
+    <div class="p10">
         <label for="assunto">Assunto:</label>
-        <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+        <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+        <div id='txtAssunto'></div>
     </div>  
-        <button>Enviar</button>
+    <div>
+        <button onclick="enviar()">Enviar</button>
+    </div>
     </form>
+</section>
 
-    <h2 class="end">Endereço:</h2>
-    <p class="end a">Praia do Forte</p>
-    <p class="end a">Cabo Frio - Rio de Janeiro</p>
+<section>
+    <h2 class="ende">Endereço:</h2>
+    <div class="ende">
+        <p>Praia do Forte</p>
+        <p>Cabo Frio - Rio de Janeiro, RJ</p>
+    </div>
+    <div class="ende">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14702.265220888848!2d-42.01922045!3d-22.89247405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x971b3b3ef4f6bd%3A0xc3493683df8a12bb!2sPraia%20do%20Forte!5e0!3m2!1spt-BR!2sbr!4v1705354750356!5m2!1spt-BR!2sbr"
+         width="400" 
+         height="250" 
+         frameborder="0" 
+         allowfullscreen="" 
+         aria-hidden="false"
+         tabindex="0"
+         id="mapa" onmousemove="mapaZoom()" onmouseout="mapaNormal()">
+        </iframe>
 
-    <iframe class="end" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6181.943946976051!2d-42.018900144623366!3d-22.88362887237173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9704b3e8e33a07%3A0x50e3e1cb53b1e75d!2sPraia%20do%20Forte!5e0!3m2!1spt-BR!2sbr!4v1704757615500!5m2!1spt-BR!2sbr"
-     width="900" 
-     height="500"
-      style="border:0;" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
+       ></iframe>
+    </div>
+</section>
+</article>
+
+    <footer>
+        <div class="icons">
+         <a chref="https://www.linkedin.com/in/luiziury/" target="_blank"><img src="assents/LindkedIn.svg" alt="Logo LinkedIn"></a>
+
+          <a href="https://www.instagram.com/luiz_iury/" target="_blank"><img src="assents/Instagram.svg" alt="Logo Instagram"></a>
+
+         <a href="https://github.com/LuizIury" target="_blank"><img src="assents/Github.svg" alt="Logo Github"></a>
+         </div>
+
+        <p class="rodape">feito com 🌊 por Luiz Iury -2024</p> 
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

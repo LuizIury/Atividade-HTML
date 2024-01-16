@@ -32,7 +32,7 @@
     color:aqua;
 }
 
-.p30 {
+.p40 {
     padding: 40px;
 }
 
@@ -42,16 +42,41 @@
 
 
 .formulario {
-    text-align: center;
+    display: flex;
     padding: 100px;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 400px;
+    flex-flow: row wrap;
+    
 }
 
-.end{
+.p10 {
+    padding: 10px;
+}
+
+.ende{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    font-size: 17px;
 }
 
-.end a{
-    font-size: 15px;
+.coluna{
+    columns: 2;
+    flex-direction: row wrap;
 }
